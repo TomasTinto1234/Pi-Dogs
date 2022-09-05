@@ -7,7 +7,7 @@ ul.pagination {
 
 ul.pagination li {display: inline;}
 
-ul.pagination li a {
+ul.pagination li i {
     color: black;
     float: left;
     padding: 8px 16px;
@@ -15,10 +15,10 @@ ul.pagination li a {
     border-radius: 5px;
 }
 
-ul.pagination li a.active {
+ul.pagination li i.active {
     background-color: #4CAF50;
     color: white;
     border-radius: 5px;
 }
 
-ul.pagination li a:hover:not(.active) {background-color:  rgb(3, 59, 8);}
+ul.pagination li i:hover:not(.active) {background-color:  rgb(3, 59, 8);}

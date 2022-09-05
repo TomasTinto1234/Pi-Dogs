@@ -8,7 +8,7 @@ import { store } from '../src/store';
 
 
 ReactDOM.render(
- <Provider store = {store}>
+ <Provider store = {store}>  
   <React.StrictMode>
     <App />
   </React.StrictMode>

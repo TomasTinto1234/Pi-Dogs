@@ -99,12 +99,13 @@
   font-size: 1rem;
   color: #090808;
   transition: border 100ms cubic-bezier(0.4,0,0.2,1);
+  justify-content: space-between;
  }
  
  .user-label {
  
   color: #0b0606;
-
+  justify-content: space-between;
   transform: translateY(1rem);
   transition: 150ms cubic-bezier(0.4,0,0.2,1);
   color:  rgb(3, 59, 8);
@@ -115,6 +116,7 @@
   border-radius: 1rem;
   color: rgb(12, 12, 12);
   border: 1px solid #c2c3c3;
+  justify-content: space-between;
  }
  
  .input:focus ~ label, input:valid ~ label {
@@ -122,6 +124,7 @@
   background-color: #5b2829;
   padding: 0 .2em;
   color:  rgb(3, 59, 8);
+  justify-content: space-between;
  }
 
 
@@ -133,17 +136,18 @@
   justify-content: space-between;
   background-color: #fff;
   padding: 15px;
+  border: solid 2px black;
  }
 
  .navbaer select {
   text-decoration: none;
   color: inherit;
-
+  border: solid 2px black;
  }
 
  .list{
   list-style: none;
-  display: list-item;
+  border: solid 2px black;
   gap: 25px;
  }
 
@@ -154,13 +158,14 @@
 
  @media screen and (max-width: 600px) {
   .menu {
+    border: solid 2px black;
     width: 100%;
     max-width: 0;
     overflow: hidden;
   }
 
   .list{
-    flex-direction: row-reverse;
+    border: solid 2px black;
     align-items: center;
     cursor: pointer;
   }
@@ -169,8 +174,16 @@
   }
  }
 
+ .icons-wrapper{
+  
+  display: inline-block;
+ 
+  font-size:44px;
+ }
+
  .icon{
   display: inline-block;
+ 
   font-size:44px;
   animation: float 5s ease-in-out
   infinite;
@@ -184,14 +197,6 @@
 
  }
 
- @keyframes float {
-  0% {
-    transform: translateY(0)
-  }
-  50% {
-    transform: translateY(-15px)
-  }
-  100% {
-    transform: translateY(0)
-  }
- }
+.pi{
+  border: solid 2px black;
+}

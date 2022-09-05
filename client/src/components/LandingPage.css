@@ -257,6 +257,7 @@
 
 }
 
+
 .pruba2{font:20 30px/1em Amatic SC;text-align:center;padding-top:0px;color: #5b2829}
 .jittery span{animation:jitter 200ms linear infinite;color:#f06d06;display:inline-block}
 @keyframes jitter{ 50%{transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);} }

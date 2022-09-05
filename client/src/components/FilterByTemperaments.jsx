@@ -7,7 +7,7 @@ export function FilterByTemperaments(){
     const temmp = useSelector((state) => state.temperament)
 
     function handleChange(e) {
-        dispatch(getDogsByTemp(e.taget))
+        dispatch(getDogsByTemp(e.taget.value))
     }
 
     useEffect(()=> {
