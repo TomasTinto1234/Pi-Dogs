@@ -277,8 +277,8 @@ export function CreateDog() {
               required
             >
               <option  required hidden={true}>Razas</option>
-              {breed.map((e) => (
-                <option className="searchTerm" value={e}>
+              {breed.map((e, b) => (
+                <option className="searchTerm" key={b} value={e}>
                   {e} 
                 </option>
               ))}
@@ -293,8 +293,8 @@ export function CreateDog() {
               required
             >
               <option  required hidden={true}>Temperamentos</option>
-              {temperaments.map((e) => (
-                <option key={e.id} className="searchTerm" value={e.name}>
+              {temperaments.map((e, t) => (
+                <option key={t} className="searchTerm" value={e.name}>
                   {e.name} 
                 </option>
               ))}
@@ -302,7 +302,7 @@ export function CreateDog() {
 
             <div>
               {input.temperament.map((e) => (
-                <div key={e.id} className="searchTerm">
+                <div key={e} className="searchTerm">
                   {e}
                   <button 
                     className="select"

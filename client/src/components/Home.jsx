@@ -224,9 +224,9 @@ export default function Home() {
                   Razas
                 </option>
                 {allBreeds &&
-                  allBreeds.map((breed) => {
+                  allBreeds.map((breed, r) => {
                     return (
-                      <option key={breed} value={breed}>
+                      <option key={r} value={breed}>
                         {breed}
                       </option>
                     );
@@ -247,9 +247,9 @@ export default function Home() {
                       if (a.name > b.name) return 1;
                       return 0;
                     })
-                    .map((e) => {
+                    .map((e, g) => {
                       return (
-                        <option key={e.id} value={e.name}>
+                        <option key={g} value={e.name}>
                           {e.name}
                         </option>
                       );
@@ -288,12 +288,12 @@ export default function Home() {
           </div>
         ) : (
           currentDogs &&
-          currentDogs?.map((e) => {
+          currentDogs?.map((e, f) => {
             return (
-              <div className="caja" key={e.id}>
-                <Link to={"/detail/" + e.id} key={e.id}>
+              <div className="caja" key={f}>
+                <Link to={"/detail/" + e.id} key={f.id}>
                   <Card
-                    key={e.id}
+                    id={e.id}
                     name={e.name}
                     image={e.image}
                     weightMin={e.weightMin}
