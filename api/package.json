@@ -23,7 +23,8 @@
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
     "react-scripts": "^5.0.1",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {
     "chai": "^4.2.0",
