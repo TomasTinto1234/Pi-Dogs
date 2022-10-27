@@ -41,7 +41,6 @@ const getFromApi = async () => {
     const dogList = await api.data.map((e) => {    // los mapeo y es de esta forma que voy a acceder desde el front
       let height = e.height.metric.split("-").map((e)=>e.trim())
       let weight = e.weight.metric.split("-").map(e=>e.trim())
-      
       return {
         id: e.id,
         name: e.name,
